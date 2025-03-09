@@ -1,0 +1,49 @@
+/* PP Neue Montreal font family */
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-book.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-medium.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-semibold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/ppneuemontreal-italic.otf") format("opentype");
+}
+
