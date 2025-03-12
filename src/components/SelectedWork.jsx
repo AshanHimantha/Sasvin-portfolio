@@ -37,7 +37,7 @@ const SelectedWork = () => {
         </h3>
       </div>
       
-      <div className="w-11/12 mt-10 md:mt-12 flex flex-wrap justify-between lg:gap-9">
+      <div className="w-11/12 mt-10 md:mt-12 flex flex-wrap justify-between ">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}

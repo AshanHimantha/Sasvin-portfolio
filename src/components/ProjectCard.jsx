@@ -1,6 +1,6 @@
 const ProjectCard = ({ image, title, category }) => {
   return (
-    <div className="w-full md:w-[48%] mb-12">
+    <div className="w-full md:w-[48%] mb-16">
       <div className="border border-gray-200 rounded-lg aspect-[5/3] overflow-hidden">
         <img
           src={image}

@@ -8,6 +8,8 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <>
+
+    
       <div className="font-ppnm w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
         <div className="lg:px-16 px-0 w-full h-full">
 
