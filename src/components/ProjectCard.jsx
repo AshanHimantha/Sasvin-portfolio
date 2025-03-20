@@ -5,7 +5,7 @@ const ProjectCard = ({ image, title, category }) => {
         <img
           src={image}
           alt={`${title} thumbnail`}
-          className="w-full h-full object-cover transition-transform "
+          className="w-full h-full object-cover transition-transform scale-100 hover:scale-105 duration-300"
           loading="lazy"
         />
       </div>

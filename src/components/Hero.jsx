@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
+import "../styles/animations.css";
 
 function Hero() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-between mt-20 bg-white">
+    <section className="w-full min-h-screen flex flex-col items-center justify-between mt-20 bg-white" id="#">
 
 
-      <div className="flex-grow flex flex-col justify-center w-full pt-10">
+      <div className="flex-grow flex flex-col justify-center w-full pt-10 lg:pt-0">
         <div className="flex w-full h-28 lg:mt-30 mt-10 px-6 lg:px-[125px]">
           <div className=" h-full lg:w-1/3 w-1/2">
             <p className="text-[#6A6A6A] lg:text-[13px] text-[10.5px] ">
@@ -50,17 +50,17 @@ function Hero() {
         </div>
 
         <div className="w-full flex flex-col items-center mt-12 2xl:mt-24">
-          <div className="lg:w-1/2 w-10/12  grid grid-cols-4 gap-4 lg:gap-0 lg:px-[125px] text-center ">
-            <a href="#" class="hover:text-gray-400">
+          <div className="lg:w-1/2 w-10/12 flex justify-between lg:px-[125px]">
+            <a href="#" className=" inline-block hover-underline-animation">
               Dribbble
             </a>
-            <a href="#" class="hover:text-gray-400">
+            <a href="#" className=" inline-block hover-underline-animation">
               Behance
             </a>
-            <a href="#" class="hover:text-gray-400">
+            <a href="#" className=" inline-block hover-underline-animation">
               LinkedIn
             </a>
-            <a href="#" class="hover:text-gray-400">
+            <a href="#" className=" inline-block hover-underline-animation">
               Medium
             </a>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Sayhello() {
   return (
-	<div className="w-full flex justify-center px-4 md:px-6 lg:px-8 mb-10 mt-20">
+	<section className="w-full flex justify-center px-4 md:px-6 lg:px-8 mb-10 mt-20" id="contact">
           <div className="border border-[#6A6A6A] rounded-2xl w-full  p-6 md:p-6 lg:p-[115px] lg:pt-14 lg:pb-14">
             <div className="w-full flex flex-col md:flex-row gap-6 ">
               <div className="w-full md:w-1/2">
@@ -31,11 +31,19 @@ function Sayhello() {
                 <img src="./images/logo.svg" alt="Logo" className="h-8 " />
               </div>
 
-              <div className=" grid grid-cols-4 lg:gap-20 gap-5 text-center pb-4 w-full lg:w-auto m-auto">
-                <a href="#" className="hover:text-gray-400 font-medium text-start text-[#1C1C1C]  pt-4">Dribbble</a>
-                <a href="#" className="hover:text-gray-400 font-medium text-[#1C1C1C] pt-4">Behance</a>
-                <a href="#" className="hover:text-gray-400 font-medium text-[#1C1C1C] pt-4">LinkedIn</a>
-                <a href="#" className="hover:text-gray-400 font-medium text-end text-[#1C1C1C] pt-4">Medium</a>
+              <div className="grid grid-cols-4 lg:gap-20 gap-5 text-center pb-4 w-full lg:w-auto m-auto">
+                <a href="#" className=" font-medium text-start text-[#1C1C1C] pt-4 inline-block hover-underline-animation">
+                  Dribbble
+                </a>
+                <a href="#" className=" font-medium text-[#1C1C1C] pt-4 inline-block hover-underline-animation">
+                  Behance
+                </a>
+                <a href="#" className=" font-medium text-[#1C1C1C] pt-4 inline-block hover-underline-animation">
+                  LinkedIn
+                </a>
+                <a href="#" className=" font-medium text-end text-[#1C1C1C] pt-4 inline-block hover-underline-animation">
+                  Medium
+                </a>
               </div>
 
               <div className="lg:block hidden" ><p className="text-[12.4px] text-[#6A6A6A]">© 2025 Imeth Sasvin</p></div>
@@ -44,7 +52,7 @@ function Sayhello() {
 
           </div>
 
-        </div>
+        </section>
   )
 }
 

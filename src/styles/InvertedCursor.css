@@ -8,6 +8,23 @@
   background-color: white;
   transform: translate(-50%, -50%);
   z-index: 9999;
+  opacity: 1;
+  animation: breathing 2s ease-in-out infinite;
+}
+
+@keyframes breathing {
+  0%, 100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.inverted-cursor.clicking {
+  transform: translate(-50%, -50%) scale(0.9);
+  animation: none;
+  transition: transform 0.1s ease;
 }
 
 /* Hide the default cursor */
@@ -18,4 +35,13 @@ body {
 /* Add cursor back for clickable elements */
 a, button, input, textarea, select, [role="button"] {
   cursor: none;
+}
+
+/* Add a subtle hover effect for interactive elements */
+a:hover ~ .inverted-cursor,
+button:hover ~ .inverted-cursor,
+[role="button"]:hover ~ .inverted-cursor {
+  width: 30px;
+  height: 30px;
+  animation: none;
 }

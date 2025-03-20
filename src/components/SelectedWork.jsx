@@ -30,14 +30,15 @@ const projects = [
 
 const SelectedWork = () => {
   return (
-    <div className="w-full flex flex-col items-center justify-center lg:mt-20 mt-10 px-4 ">
-      <div className="w-11/12">
-        <h3 className="text-start lg:text-[65px] text-[40px] font-light">
+    <section className="w-full flex flex-col items-center justify-center  pt-20 px-4 bg-white" id="work">
+      <div className="w-17/20 flex justify-between items-center lg:mt-10 mt-30">
+        <h3 className="text-start lg:text-[33px] text-[20px] font-light">
           SELECTED <span className="font-medium">WORK.</span>
         </h3>
+        <h3> <span className="font-medium lg:text-[33px] text-[20px]">PETPAL.</span></h3>
       </div>
       
-      <div className="w-11/12 mt-10 md:mt-12 flex flex-wrap justify-between ">
+      <div className="w-10/12 mt-10 md:mt-12 flex flex-wrap justify-between ">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
@@ -47,7 +48,7 @@ const SelectedWork = () => {
           />
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

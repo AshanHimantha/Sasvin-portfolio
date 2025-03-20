@@ -2,7 +2,7 @@ import React from "react";
 
 function About() {
   return (
-    <>
+    <section className="w-full min-h-screen flex flex-col items-center justify-center" id="about">
       {/* Mobile and Tablet Screen */}
       <div className="w-full flex flex-col items-center justify-center mt-10 p-4 lg:hidden">
         <p className="self-start text-[10.5px] md:text-[12px] text-[#6A6A6A]">ABOUT</p>
@@ -76,7 +76,7 @@ function About() {
         </div>
 
         <div className="w-full  flex justify-end -mt-8">
-          <button className="uppercase mt-3 text-[16px] text-[#6A6A6A] font-medium">
+          <button className="uppercase mt-3 text-[16px] text-[#6A6A6A] hover:text-black font-medium hover-underline-animation">
             Download CV
           </button>
         </div>
@@ -107,7 +107,7 @@ function About() {
           <hr className="w-full bg-gray-100" />
         </div>
       </div>
-    </>
+    </section>
   );
 }
 

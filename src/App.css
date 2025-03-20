@@ -4,3 +4,7 @@ body {
   font-family: 'PPNeueMontreal', system-ui, sans-serif;
 }
 
+*{
+  scroll-behavior: smooth;
+}
+
