@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 function Hero() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-between mt-20">
+    <section className="w-full min-h-screen flex flex-col items-center justify-between mt-20 bg-white">
 
 
       <div className="flex-grow flex flex-col justify-center w-full pt-10">

@@ -13,11 +13,11 @@ function Sayhello() {
                   BASED IN COLOMBO - PUSHING CREATIVITY EVERYWHERE
                 </p>
               </div>
-              <div className="w-full md:w-1/2 flex flex-col lg:items-end items-end text-center justify-center lg:justify-end gap-4">
+              <div className="w-full md:w-1/2 flex flex-col lg:items-end items-end text-center justify-center lg:justify-end gap-4 hover:scale-105 duration-300 hover:opacity-75">
                 <p className="  text-[35px] lg:text-[36px] self-start lg:self-end ">
                   Say hello, I'll be there.
                 </p>
-                <img src="/images/arrow.svg" alt="" srcset="" />
+                <img src="/images/arrow.svg" alt="" srcset=""  />
               </div>
             </div>
 

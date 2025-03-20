@@ -48,7 +48,7 @@ export default function Navbar() {
   return (
     <nav
       className={classNames(
-        "fixed w-full lg:px-[8.5rem] px-6 py-4 md:py-6 transition-all duration-500 z-50",
+        "fixed w-full lg:px-[8.5rem] px-6 py-4 md:py-6 transition-all duration-500 z-50 ",
         hidden ? "-translate-y-full" : "translate-y-0",
         isLoaded ? "opacity-100" : "opacity-0 translate-y-[-10px]",
       )}
