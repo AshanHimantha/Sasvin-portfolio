@@ -26,7 +26,7 @@ const InvertedCursor = () => {
 
   return (
     <div 
-      className={`inverted-cursor lg:block hidden ${isClicking ? 'clicking' : ''}`}
+      className={`inverted-cursor lg:flex hidden ${isClicking ? 'clicking' : ''}`}
       style={{
         left: `${position.x}px`,
         top: `${position.y}px`,

@@ -3,8 +3,8 @@ import "./App.css";
 import "./fonts.css";
 import Navbar from "./components/Navbar";
 import MainPage from "./MainPage";
-import SelectedWork from "./components/SelectedWork";
-import InvertedCursor from "./components/InvertedCursor";
+import Work from "./Work";
+import InvertedCursor from './components/InvertedCursor';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<MainPage />} />
-        <Route path="/selected-work" element={<SelectedWork />} />
+        <Route path="/selected-work/:id" element={<Work />} />
       </Routes>
     </>
   );

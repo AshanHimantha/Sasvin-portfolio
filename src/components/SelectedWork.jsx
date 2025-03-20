@@ -1,50 +1,40 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
-
-const projects = [
-  {
-    id: 1,
-    title: "Project One",
-    category: "UI / UX",
-    image: "https://cdn.dribbble.com/userupload/7792710/file/original-f348e1173d8e400462fd3bf01efec4fd.png?resize=1504x1128&vertical=center"
-  },
-  {
-    id: 2,
-    title: "Project Two",
-    category: "Web Design",
-    image: "https://cdn.dribbble.com/userupload/13462281/file/original-1aee713c2ef9a32d0ed3da431e128b60.png?resize=1504x1128&vertical=center"
-  },
-  {
-    id: 3,
-    title: "Project Three",
-    category: "UI / UX",
-    image: "https://cdn.dribbble.com/userupload/14103766/file/original-d6521c10214b1870f3a31ec8dca2ea64.png?resize=1504x1128&vertical=center"
-  },
-  {
-    id: 4,
-    title: "Project Four",
-    category: "Development",
-    image: "https://cdn.dribbble.com/userupload/13523127/file/original-7b5cb18f0a102be8c5cfacb51c475c69.png?resize=1024x768&vertical=center"
-  }
-];
+import { projects } from "../data/projectsData";
 
 const SelectedWork = () => {
+  const navigate = useNavigate();
+
+  const handleProjectClick = (id) => {
+    console.log(`Navigating to project ${id}`);
+    try {
+      navigate(`/selected-work/${id}`);
+    } catch (error) {
+      console.error("Navigation error:", error);
+    }
+  };
+
   return (
-    <section className="w-full flex flex-col items-center justify-center  pt-20 px-4 bg-white" id="work">
-      <div className="w-17/20 flex justify-between items-center lg:mt-10 mt-30">
-        <h3 className="text-start lg:text-[33px] text-[20px] font-light">
+    <section className="w-full flex flex-col items-center justify-center pt-10 px-4 bg-white" id="work">
+      <div className="w-17/20 flex justify-between items-center lg:mt-10 ">
+        <h3 className="text-start lg:text-[65px] text-[33px] font-light">
           SELECTED <span className="font-medium">WORK.</span>
         </h3>
-        <h3> <span className="font-medium lg:text-[33px] text-[20px]">PETPAL.</span></h3>
+       
       </div>
       
       <div className="w-10/12 mt-10 md:mt-12 flex flex-wrap justify-between ">
         {projects.map((project) => (
           <ProjectCard
             key={project.id}
-            image={project.image}
+            image={project.thumbnail}
             title={project.title}
             category={project.category}
+            onClick={() => {
+              console.log(`Clicking project ${project.id}`);
+              handleProjectClick(project.id);
+            }}
           />
         ))}
       </div>

@@ -76,7 +76,7 @@ function About() {
         </div>
 
         <div className="w-full  flex justify-end -mt-8">
-          <button className="uppercase mt-3 text-[16px] text-[#6A6A6A] hover:text-black font-medium hover-underline-animation">
+          <button className="uppercase mt-3 text-[16px] text-[#6A6A6A] hover:text-black font-medium hover-underline-animation cursor-pointer">
             Download CV
           </button>
         </div>

@@ -1,6 +1,6 @@
-const ProjectCard = ({ image, title, category }) => {
+const ProjectCard = ({ image, title, category, onClick }) => {
   return (
-    <div className="w-full md:w-[48%] mb-16">
+    <div className="w-full md:w-[48%] mb-16"  onClick={onClick}>
       <div className="border border-gray-200 rounded-lg aspect-[5/3] overflow-hidden hover:shadow-lg transition-shadow duration-300">
         <img
           src={image}
