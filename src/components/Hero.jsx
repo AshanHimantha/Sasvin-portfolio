@@ -1,34 +1,12 @@
 import React from "react";
+import Navbar from "./Navbar";
 
 function Hero() {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-between">
-      <div className="w-screen">
-        <header class="flex justify-between items-center gap-5 p-5 px-[66px] relative">
-          <div class="flex items-center gap-5 ">
-            <img src="./images/logo.svg" alt="Logo" class="h-10" />
-          </div>
-          <nav class="flex items-center gap-10">
-            <a
-              href="#"
-              class="relative text-black text-lg hover:underline transition duration"
-            >
-              Work
-            </a>
-            <a
-              href="#"
-              class="relative text-black  hover:underline transition text-md"
-            >
-              About me
-            </a>
-            <button class="px-4 py-2 border border-black rounded-md text-md  hover:bg-black hover:text-white transition ">
-              Say Hello
-            </button>
-          </nav>
-        </header>
-      </div>
+    <section className="w-full min-h-screen flex flex-col items-center justify-between mt-20">
 
-      <div className="flex-grow flex flex-col justify-center w-full">
+
+      <div className="flex-grow flex flex-col justify-center w-full pt-10">
         <div className="flex w-full h-28 lg:mt-30 mt-10 px-6 lg:px-[125px]">
           <div className=" h-full lg:w-1/3 w-1/2">
             <p className="text-[#6A6A6A] lg:text-[13px] text-[10.5px] ">
@@ -60,7 +38,7 @@ function Hero() {
           </p>
         </div>
 
-        <div className="w-full p-0 m-0 px-1 lg:px-0 mt-28">
+        <div className="w-full p-0 m-0 px-1 lg:px-0 mt-20">
           <h1 class="text-[41.5px] sm:text-[50px] md:text-[70px] lg:text-[100px] 2xl:text-[130px]  font-light mb-[-25px] p-0 m-0 lg:pl-28">
             IMETH SASVIN
           </h1>

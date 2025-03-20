@@ -1,30 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import "./fonts.css";
+import Navbar from "./components/Navbar"; // Import your Navbar component
+
+import MainPage from "./MainPage";
 import SelectedWork from "./components/SelectedWork";
-import Sayhello from "./components/Sayhello";
-import About from "./components/About";
-import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
-
-    
-      <div className="font-ppnm w-full min-h-screen flex flex-col items-center justify-center overflow-hidden">
-        <div className="lg:px-16 px-0 w-full h-full">
-
-          <Hero />
-
-          
-          <About />
-          <SelectedWork />
-          
-        </div>
-
-        <Sayhello />
-
-
-      </div>
+      <Navbar /> {/* Add Navbar here, outside Routes */}
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/selected-work" element={<SelectedWork />} />
+      </Routes>
     </>
   );
 }

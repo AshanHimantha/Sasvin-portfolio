@@ -10,6 +10,6 @@ export default defineConfig({
 
   ],
   server: {
-    allowedHosts: ['imeth.ashanhimantha.com']
+    allowedHosts: ['frontend.ashanhimantha.com']
   }
 })
